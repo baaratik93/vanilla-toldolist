@@ -47,7 +47,7 @@ h2 {
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 780px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -113,13 +113,16 @@ button:focus-visible {
   margin: auto;
   background-image: url(./public/bg.png);
   padding: 10px;
-  width: auto;
-  transform: translateY(100px);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
   border-radius: 10px;
 }
 
 span {
   display: grid;
+  margin: auto;
   grid-auto-flow: column;
   grid-auto-columns: 5fr 1fr 1fr 1fr;
   justify-content: center;
@@ -151,11 +154,6 @@ input {
 
 
 dialog {
-  position: fixed;
-  transform: translate(-50%,-50%);
-  top: 35%;
-  opacity: 0.9;
-  left: 50%;
   width: 250px;
   height: 190px;
   border: none;
